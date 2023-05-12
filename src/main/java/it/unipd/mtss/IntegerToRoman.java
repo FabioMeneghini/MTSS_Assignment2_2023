@@ -1,15 +1,13 @@
 ////////////////////////////////////////////////////////////////////
-// [NOME1] [COGNOME1] [MATRICOLA1]
-// [NOME2] [COGNOME2] [MATRICOLA2]
+// FABIO MENEGHINI 2034332
+// NICOLA LAZZARIN 2042376
 ////////////////////////////////////////////////////////////////////
 
 package it.unipd.mtss;
 
 public class IntegerToRoman {
-	public static String convert(int number){
-		// TODO
-		//return null;
-		
+	public static String convert(int number) {
+		if(number<0) number*=-1;
 		String[] thousands = {"", "M", "MM", "MMM"};  
 		String[] hundreds = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};  
 		String[] tens = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};  
