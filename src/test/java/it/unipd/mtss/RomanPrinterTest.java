@@ -225,5 +225,29 @@ public class RomanPrinterTest {
                       + " \\_____|\n";
         assertEquals(expected, asciiArt);
     }
+    
+    @Test
+    public void testPrintTwoHundred() {
+        String asciiArt=RomanPrinter.print(200);
+        String expected="  _____   _____ \n"
+                      + " / ____| / ____|\n"
+                      + "| |     | |     \n"
+                      + "| |     | |     \n"
+                      + "| |____ | |____ \n"
+                      + " \\_____| \\_____|\n";
+        assertEquals(expected, asciiArt);
+    }
+    
+    @Test
+    public void testPrintFiveHundred() {
+        String asciiArt=RomanPrinter.print(500);
+        String expected=" _____  \n"
+                      + "|  __ \\ \n"
+                      + "| |  | |\n"
+                      + "| |  | |\n"
+                      + "| |__| |\n"
+                      + "|_____/ \n";
+        assertEquals(expected, asciiArt);
+    }
 
 }
