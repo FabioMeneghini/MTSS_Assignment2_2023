@@ -12,6 +12,10 @@ public class RomanPrinter {
     }
 
     /*private*/ public static String printAsciiArt(String romanNumber) {
+    	if(romanNumber.equals("")) {
+    		return "";
+    	}
+    	
         String[] I= {" _____ ",
                      "|_   _|",
                      "  | |  ",
@@ -33,6 +37,9 @@ public class RomanPrinter {
                 }
                 else if(romanNumber.charAt(j)=='V') {
                     ret+=V[i];
+                }
+                else {
+                	return "";
                 }
             }
             ret+='\n';
