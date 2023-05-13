@@ -105,5 +105,41 @@ public class RomanPrinterTest {
 		String expected="";
 		assertEquals(expected, asciiArt);
 	}
+	
+	@Test
+	public void testPrintEight() {
+		String asciiArt=RomanPrinter.print(8);
+		String expected="__      __ _____  _____  _____ \n"
+                    + "\\ \\    / /|_   _||_   _||_   _|\n"
+                    + " \\ \\  / /   | |    | |    | |  \n"
+                    + "  \\ \\/ /    | |    | |    | |  \n"
+                    +  "   \\  /    _| |_  _| |_  _| |_ \n"
+                    +  "    \\/    |_____||_____||_____|\n";
+		assertEquals(expected, asciiArt);
+	}
+	
+	@Test
+	public void testPrintTen() {
+		String asciiArt=RomanPrinter.print(10);
+		String expected="__   __\n"
+                    + "\\ \\ / /\n"
+                    +  " \\ V / \n"
+                    +   "  > <  \n"
+                    +  " / . \\ \n"
+                    + "/_/ \\_\\\n";
+		assertEquals(expected, asciiArt);
+	}
+	
+	@Test
+	public void testPrintNegativeTen() {
+		String asciiArt=RomanPrinter.print(10);
+		String expected="__   __\n"
+                    + "\\ \\ / /\n"
+                    +  " \\ V / \n"
+                    +   "  > <  \n"
+                    +  " / . \\ \n"
+                    + "/_/ \\_\\\n";
+		assertEquals(expected, asciiArt);
+	}
 
 }

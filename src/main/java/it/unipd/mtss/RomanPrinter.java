@@ -28,6 +28,12 @@ public class RomanPrinter {
                    "  \\ \\/ /  ",
                    "   \\  /   ",
                    "    \\/    "};
+        String[] X= {"__   __",
+                   "\\ \\ / /",
+                    " \\ V / ",
+                     "  > <  ",
+                    " / . \\ ",
+                   "/_/ \\_\\"};
 
             String ret="";
             for(int i=0; i<6; ++i) {
@@ -37,6 +43,9 @@ public class RomanPrinter {
                 }
                 else if(romanNumber.charAt(j)=='V') {
                     ret+=V[i];
+                }
+                else if(romanNumber.charAt(j)=='X') {
+                    ret+=X[i];
                 }
                 else {
                     return "";
