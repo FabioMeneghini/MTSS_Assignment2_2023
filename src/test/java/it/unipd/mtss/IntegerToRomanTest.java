@@ -128,5 +128,19 @@ public class IntegerToRomanTest {
         String oneHundred=IntegerToRoman.convert(100);
         String expectedOneHundred="C";
         assertEquals(expectedOneHundred,oneHundred);
+        
     }
+    @Test
+    public void testConvertTwoHundred() {
+        String twoHundred=IntegerToRoman.convert(200);
+        String expectedTwoHundred="CC";
+        assertEquals(expectedTwoHundred,twoHundred);
+    }
+    @Test
+    public void testConvertFiveHundred() {
+        String fiveHundred=IntegerToRoman.convert(500);
+        String expectedFiveHundred="D";
+        assertEquals(expectedFiveHundred,fiveHundred);
+    }
+
 }
