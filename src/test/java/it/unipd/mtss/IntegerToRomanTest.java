@@ -58,5 +58,26 @@ public class IntegerToRomanTest {
         String expectedSix="VI";
         assertEquals(expectedSix,six);
     }
+    
+    @Test
+    public void testConvertEight() {
+        String eight=IntegerToRoman.convert(8);
+        String expectedEight="VIII";
+        assertEquals(expectedEight,eight);
+    }
+
+    @Test
+    public void testConvertTen() {
+        String ten=IntegerToRoman.convert(10);
+        String expectedTen="X";
+        assertEquals(expectedTen,ten);
+    }
+    @Test
+    public void testConvertNegativeTen() {
+        String negativeTen=IntegerToRoman.convert(-10);
+        String expectedNegativeTen="X";
+        assertEquals(expectedNegativeTen,negativeTen);
+    }
+
 
 }
