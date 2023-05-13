@@ -142,6 +142,26 @@ public class IntegerToRomanTest {
         String expectedFiveHundred="D";
         assertEquals(expectedFiveHundred,fiveHundred);
     }
+    @Test
+    public void testConvertSixHundredSeventytwo() {
+        String sixHundredSeventytwo=IntegerToRoman.convert(672);
+        String expectedSixHundredSeventytwo="DCLXXII";
+        assertEquals(expectedSixHundredSeventytwo,sixHundredSeventytwo);
+    }
+    @Test
+    public void testConvertNineHundredFortyfive() {
+        String nineHundredFortyfive=IntegerToRoman.convert(945);
+        String expectedNineHundredFortyfive="CMXLV";
+        assertEquals(expectedNineHundredFortyfive,nineHundredFortyfive);
+    }
+
+    @Test
+    public void testConvertOneThousand() {
+        String oneThousand=IntegerToRoman.convert(1000);
+        String expectedOneThousand="M";
+        assertEquals(expectedOneThousand,oneThousand);
+    }
+
 
 }
  
