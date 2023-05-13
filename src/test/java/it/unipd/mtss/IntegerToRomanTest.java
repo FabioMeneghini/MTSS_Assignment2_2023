@@ -117,4 +117,16 @@ public class IntegerToRomanTest {
         String expectedNegativeFifty="L";
         assertEquals(expectedNegativeFifty,negativeFifty);
     }
+    @Test
+    public void testConvertEightythree() {
+        String eightythree=IntegerToRoman.convert(83);
+        String expectedEightythree="LXXXIII";
+        assertEquals(expectedEightythree,eightythree);
+    }
+    @Test
+    public void testConvertOneHundred() {
+        String oneHundred=IntegerToRoman.convert(100);
+        String expectedOneHundred="C";
+        assertEquals(expectedOneHundred,oneHundred);
+    }
 }
