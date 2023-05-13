@@ -52,6 +52,12 @@ public class RomanPrinter {
                      "| |  | |",
                      "| |__| |",
                      "|_____/ "};
+        String[] M= {" __  __ ",
+                     "|  \\/  |",
+                     "| \\  / |",
+                     "| |\\/| |",
+                     "| |  | |",
+                     "|_|  |_|"};
 
             String ret="";
             for(int i=0; i<6; ++i) {
@@ -73,6 +79,9 @@ public class RomanPrinter {
                 }
                 else if(romanNumber.charAt(j)=='D') {
                     ret+=D[i];
+                }
+                else if(romanNumber.charAt(j)=='M') {
+                    ret+=M[i];
                 }
                 else {
                     return "";
