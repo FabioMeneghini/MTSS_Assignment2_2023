@@ -92,4 +92,29 @@ public class IntegerToRomanTest {
         assertEquals(expectedTwenty,twenty);
     }
 
+    @Test
+    public void testConvertTwentythree() {
+        String twentythree=IntegerToRoman.convert(23);
+        String expectedTwentythree="XXIII";
+        assertEquals(expectedTwentythree,twentythree);
+    }
+    @Test
+    public void testConvertThirtythree() {
+        String thirtythree=IntegerToRoman.convert(33);
+        String expectedThirtythree="XXXIII";
+        assertEquals(expectedThirtythree,thirtythree);
+    }
+    @Test
+    public void testConvertFifty() {
+        String fifty=IntegerToRoman.convert(50);
+        String expectedFifty="L";
+        assertEquals(expectedFifty,fifty);
+    }
+
+    @Test
+    public void testConvertNegativeFifty() {
+        String negativeFifty=IntegerToRoman.convert(-50);
+        String expectedNegativeFifty="L";
+        assertEquals(expectedNegativeFifty,negativeFifty);
+    }
 }
