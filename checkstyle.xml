@@ -2,7 +2,45 @@
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
 "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 <module name="Checker">
-<module name="Header">
-<property name="headerFile" value="${checkstyle.header.file}"/>
-</module>
+	<module name="Header">
+		<property name="headerFile" value="${checkstyle.header.file}"/>
+	</module>
+	
+	<module name="TreeWalker">
+		<module name="BooleanExpressionComplexity">
+			<property name="max" value="3"/>
+		</module>
+		
+		<module name="CyclomaticComplexity">
+			<property name="max" value="4"/>
+			<property name="tokens" value="LITERAL_WHILE, LITERAL_DO, LITERAL_FOR"/>
+		</module>
+		
+		<module name="MethodLength">
+			<property name="tokens" value="METHOD_DEF, CTOR_DEF"/>
+			<property name="max" value="50"/>
+		</module>
+		
+		<module name="EmptyCatchBlock">
+			<property name="commentFormat" value="expected"/>
+		</module>
+		
+		<module name="AvoidStarImport"/>
+		
+		<module name="IllegalImport"/>
+		
+		<module name="NeedBraces"/>
+	</module>
+	
+	<module name="FileLength">
+		<property name="max" value="200"/>
+	</module>
+	
+	<module name="LineLength">
+		<property name="max" value="150"/>
+	</module>
+	
+	<module name="FileTabCharacter">
+		<property name="fileExtensions" value="java"/>
+	</module>
 </module>
