@@ -79,7 +79,7 @@ public class IntegerToRomanTest {
         assertEquals(expectedNegativeTen,negativeTen);
     }
     @Test
-    public void testConvertSevenTeen() {
+    public void testConvertSeventeen() {
         String sevenTeen=IntegerToRoman.convert(17);
         String expectedSevenTeen="XVII";
         assertEquals(expectedSevenTeen,sevenTeen);

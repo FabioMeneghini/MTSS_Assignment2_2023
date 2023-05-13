@@ -141,5 +141,29 @@ public class RomanPrinterTest {
                     + "/_/ \\_\\\n";
 		assertEquals(expected, asciiArt);
 	}
+	
+	@Test
+	public void testPrintSeventeen() {
+		String asciiArt=RomanPrinter.print(17);
+		String expected="__   ____      __ _____  _____ \n"
+                    + "\\ \\ / /\\ \\    / /|_   _||_   _|\n"
+                    +  " \\ V /  \\ \\  / /   | |    | |  \n"
+                    +   "  > <    \\ \\/ /    | |    | |  \n"
+                    +  " / . \\    \\  /    _| |_  _| |_ \n"
+                    + "/_/ \\_\\    \\/    |_____||_____|\n";
+		assertEquals(expected, asciiArt);
+	}
+	
+	@Test
+	public void testPrintTwenty() {
+		String asciiArt=RomanPrinter.print(20);
+		String expected="__   ____   __\n"
+                + "\\ \\ / /\\ \\ / /\n"
+                +  " \\ V /  \\ V / \n"
+                +   "  > <    > <  \n"
+                +  " / . \\  / . \\ \n"
+                + "/_/ \\_\\/_/ \\_\\\n";
+		assertEquals(expected, asciiArt);
+	}
 
 }
