@@ -78,6 +78,18 @@ public class IntegerToRomanTest {
         String expectedNegativeTen="X";
         assertEquals(expectedNegativeTen,negativeTen);
     }
+    @Test
+    public void testConvertSevenTeen() {
+        String sevenTeen=IntegerToRoman.convert(17);
+        String expectedSevenTeen="XVII";
+        assertEquals(expectedSevenTeen,sevenTeen);
+    }
 
+    @Test
+    public void testConvertTwenty() {
+        String twenty=IntegerToRoman.convert(20);
+        String expectedTwenty="XX";
+        assertEquals(expectedTwenty,twenty);
+    }
 
 }
